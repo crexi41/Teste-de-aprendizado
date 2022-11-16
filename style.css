@@ -8,6 +8,8 @@
     list-style: none;
  }
 
+ /* colocanddo imagem de fundo  */
+
  body {
     background-image: url(./styles/fundo.webp);
     background-position: top center;
@@ -16,10 +18,14 @@
     background-color: #121214;
 }
 
+/* posicionando imagem do cabecalho */
+
 header {
     padding-top: 32px;
     height: calc(120px + 32px);
 }
+
+/* classe da imagem do top  */
 
 .imgtop {
     width: 120px;
@@ -30,12 +36,15 @@ header {
     padding: 4px;
     transition: transform .3s;
     animation: fromtop 1s;
-    
 }
+
+/* comando de animação em escala */
 
 .imgtop:hover {
     transform: scale(1.1);
 }
+
+/* comando de animação */
 
 @keyframes fromtop {
     from {
@@ -101,6 +110,8 @@ ul {
     margin-top: 32px;
 }
 
+/* comando para redimensionar imagem no css */
+
 .Rdimg {
     width: 90px;
     height: 90px;
@@ -109,18 +120,28 @@ ul {
     transition: transform .3s; 
 }
 
+/* comando para redimensionar png redes sociais no css */
+
+.face {
+    width: 5%;
+    /* height: 100%;
+    display: inline-block; */
+    border-radius: 8PX; 
+    transition: transform .3s;
+}
+
+.face:hover {
+    transform: scale(1.1);
+}
+
 
 .Rdimg:hover {
     transform: scale(1.1);
 }
 
-
-
 section ul li {
     transition: transform .3s;
 }
-
-
 
 section {
     color: #ffffff;
@@ -130,8 +151,6 @@ section p {
     color: #a1a1aa;
     
 }
-
-
 
 header div {
     animation: fromtop .7s .2s backwards;
@@ -143,8 +162,7 @@ main section {
 
 main section:nth-child(1) { 
     animation-delay: 0;
-    
-}
+}    
 
 main section:nth-child(2) { 
     animation-delay: .4s;
@@ -152,9 +170,8 @@ main section:nth-child(2) {
 
     main section:nth-child(3) { 
         animation-delay: .8s;
-        
-    }
-
+    }    
+    
 @keyframes fomtop {
     from {
         opacity: 0;
@@ -168,7 +185,7 @@ main section:nth-child(2) {
 }
 
     @keyframes frombottom {
-        
+       
         from {
             opacity: 0;
             transform: translatex(-30px)
