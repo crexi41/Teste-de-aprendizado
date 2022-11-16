@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ ul {
+    list-style: none;
+ }
+
+ body {
+    background-image: url(./styles/fundo.webp);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+}
+
+header {
+    padding-top: 32px;
+    height: calc(120px + 32px);
+}
+
+.imgtop {
+    width: 120px;
+    margin: auto;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    border-radius: 50%;
+    display: flex;
+    padding: 4px;
+    transition: transform .3s;
+    animation: fromtop 1s;
+    
+}
+
+.imgtop:hover {
+    transform: scale(1.1);
+}
+
+@keyframes fromtop {
+    from {
+        opacity: 0;
+        transform: translatey(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translatey(0);
+    }
+}
+
+.social {
+    transition: transform .3s;
+    height: 90px;
+}
+
+.social:hover {
+    transform: scale(1.1);
+}
+
+section {
+    color: wheat;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    padding-top: 4px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    margin-left: 32px;
+    animation: fromtop 1s;
+    animation-delay: 1s;
+}
+
+section div {
+    background-image: url(./styles/frente.jpg);
+    /* background-color: #2A2634; */
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;
+    
+}
+
+section ul {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    margin: 24px;
+}
+
+ul {
+    display: flex;
+    gap: 16px;
+   }
+
+   main {
+    max-width: 780px;
+    width: auto;
+    margin: 32px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.Rdimg {
+    width: 90px;
+    height: 90px;
+    border: 4PX solid #A1A1AA;
+    border-radius: 8PX; 
+    transition: transform .3s; 
+}
+
+
+.Rdimg:hover {
+    transform: scale(1.1);
+}
+
+
+
+section ul li {
+    transition: transform .3s;
+}
+
+
+
+section {
+    color: #ffffff;
+}
+
+section p {
+    color: #a1a1aa;
+    
+}
+
+
+
+header div {
+    animation: fromtop .7s .2s backwards;
+}
+
+main section {
+    animation: frombottom .7s backwards;
+}
+
+main section:nth-child(1) { 
+    animation-delay: 0;
+    
+}
+
+main section:nth-child(2) { 
+    animation-delay: .4s;
+    }
+
+    main section:nth-child(3) { 
+        animation-delay: .8s;
+        
+    }
+
+@keyframes fomtop {
+    from {
+        opacity: 0;
+        transform: translatey(-30px)
+    }
+
+    to {
+         opacity: 1;
+        transform: translatey(0)
+    }
+}
+
+    @keyframes frombottom {
+        
+        from {
+            opacity: 0;
+            transform: translatex(-30px)
+        }
+    
+        to {
+             opacity: 1;
+            transform: translatex(0)
+    
+        }
+    }
