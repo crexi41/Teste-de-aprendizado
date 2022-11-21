@@ -11,11 +11,11 @@
  /* colocanddo imagem de fundo  */
 
  body {
-    background-image: url(./styles/fundo.webp);
-    background-position: top center;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-color: #121214;
+   background-image: url(./styles/fundo.webp);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
 }
 
 /* posicionando imagem do cabecalho */
